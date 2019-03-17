@@ -14,7 +14,7 @@ pub fn main() -> () {
             cb,
             Box::new(|event| {
                 let element = global_getProperty(event, cstr("detail"));
-                components::todo::XClock::create(element);
+                components::todo::ToDo::create(element);
             }),
         );
         CustomElement_define(cstr("x-todo"), cstr("time"));

@@ -1,5 +1,4 @@
 extern "C" {
-    pub fn console_log(msg: i32);
     pub fn global_getWindow() -> i32;
     pub fn global_createEventListener() -> i32;
     pub fn global_getProperty(obj: i32, name: i32) -> i32;
